@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recipe Book</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.jpg">
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Book</h1>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <!-- List of navigation links to other pages-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="appetizers.html">Appetizers</a></li>
+                <li><a href="main-courses.html">Main Courses</a></li>
+                <li><a href="desserts.html">Desserts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="button">Search</button>
+        </div>
+
+        <div class="content">
+            <!-- Section for a specific recipe -->
+            <section>
+                <div class="image-container">
+                    <div class="image-containe">
+                        <h3><a href="appetizers.html" style="color: rgb(0, 104, 179);" >Appetizers</a></h3>
+                        <a href="appetizers.html"><img src="images/appetizer.jpg" alt="Appetizer"></a>
+                    </div>
+                    <div class="image-containe">
+                        <h3><a href="main-courses.html" style="color: rgb(0, 104, 179);" >Main Courses</a></h3>
+                        <a href="/main-courses.html"><img src="images/Grilled Chicke.jpg" alt="Main Course"></a>
+                    </div>
+                </div>
+               
+                <div class="image-container">
+                    <div class="image-containe">
+                        <h3><a href="desserts.html" style="color: rgb(0, 104, 179);">Desserts</a></h3>
+                        <a href="/desserts.html"><img src="images/Chocolate Cake.jpg" alt="Dessert"></a>
+                    </div>
+        
+                    <div class="image-containe">
+                        <h3><a href="/smoothies.html" style="color: rgb(0, 104, 179);">Smoothies</a></h3>
+                        <a href="/smoothies.html"><img src="images/Strawberry-Banana-Smoothie.jpg" alt="Smoothies"></a>
+                    </div>
+                </div>                
+        </div>
+        <div >
+            <a href="/nextPage.html"><button class="right corner-button next-buttons"><span>Next</span></button></a>
+        </div>
+        </section>
+
+        <section class="comment-section">
+            <h1 style="text-align: center;">Comments</h1>
+            <h2>Name</h2>
+            <form class="comment-form" id="commentForm">
+                <textarea id="email" placeholder="Name..." rows="1"></textarea>
+            </form>
+            <h2>Email</h2>
+            <form class="comment-form" id="commentForm">
+                <textarea id="email" placeholder="Email..." rows="1"></textarea>
+            </form>
+            <h2>Comments</h2>
+            <form class="comment-form" id="commentForm">
+                <textarea id="commentText" placeholder="Write a comment..." rows="4"></textarea>
+                <button type="button" onclick="addComment()" class="button">Submit</button>
+            </form>
+            <div class="comment-list" id="commentList">
+                <!-- Comments will be displayed here -->
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer section of the webpage -->
+    <footer>
+        <p>&copy; 2024 Recipe Book</p>
+    </footer>
+</body>
+</html>

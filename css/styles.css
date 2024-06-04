@@ -1,0 +1,342 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+body {
+    background-image: url('/images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+.image-container{
+    background-image: url('/images/secndory-background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+.search-container input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+.search-container input[type="text"]:hover,
+.search-container input[type="text"]:focus {
+    cursor: text; /* Changes cursor to I-beam */
+}
+.search-container button {
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    gap: 10px; /* Adds space between the images */
+    margin-bottom: 20px; /* Adds some margin below the container */
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4%;
+}
+
+.image-container img {
+    height: 400px; /* Sets a fixed height for the images */
+    width: auto; /* Allows the width to adjust proportionally */
+    border-radius: 10px; /* Adds border radius to the images */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    margin: 30px;
+}
+
+.image-container h3{
+    text-align: center;
+    font-size: 2em;
+    color: rgb(0, 179, 3);
+}
+
+.recipes-card {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4%;
+
+    background-image: url('/images/secndory-background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+h2,h3 {
+    -webkit-text-stroke: 1.5px black;
+  }
+
+.recipes-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.recipes-card h2 {
+    color: rgb(0, 179, 3);
+    font-size: 2em;
+}
+.recipes-card h3 {
+    color: rgb(0, 179, 3);
+    font-size: 1.8em;
+}
+
+.recipes-card h4 {
+    color: rgb(0, 179, 3);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.recipes-card ul, .recipes-card ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.content{
+    margin-bottom: 5%;
+}
+section.search {
+    margin-bottom: 2em;
+}
+
+section.recipes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section.recipes article {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+section.recipes img {
+    height: 400px;
+}
+
+footer {
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.button{
+    background-color: #007bff;
+    border: none;
+    transition: transform 0.3s ease;
+    padding: 10px;
+    margin-left: 45%;
+    margin-right: 45%;
+    color: #DDDDDD;
+    font-size: 20px;
+}
+.button:hover {
+    transform: scale(1.1); /* Slight zoom */
+    cursor: pointer; /* Changes cursor to hand */
+}
+
+.image-containe {
+    display: inline-block;
+    overflow: hidden;
+}
+.image-containe img {
+    transition: transform 0.3s ease;
+}
+.image-containe img:hover {
+    transform: scale(1.1); /* Slight zoom */
+    cursor: pointer; /* Changes cursor to hand */
+}
+
+/* Styles for the "Watch Recipe Video" button */
+.video-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.video-link:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    animation: pulse 1s infinite;
+}
+
+.corner-button{
+    border-radius: 4px;
+    background-color: #007bff;
+    border: none;
+    font-size: 28px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-bottom: 4%;
+}
+
+.left{
+    background-color: gray;
+}
+
+.left span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.left span:before {
+    content: '\00ab'; /* Left arrow */
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.left:hover span {
+    padding-left: 25px;
+}
+
+.left:hover span:before {
+    opacity: 1;
+    left: 0;
+}
+
+.right{
+    margin-left: 87%;
+}
+
+.right span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.right span:after {
+    content: '\00bb';
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.right:hover span {
+    padding-right: 25px;
+}
+
+.right:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.comment-section {
+    margin-top: 40px;
+    margin-bottom: 4%;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+.comment-form {
+    display: flex;
+    flex-direction: column;
+}
+.comment-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    resize: vertical;
+}
+.comment-list {
+    margin-top: 20px;
+}
+.comment {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Adding a pulsing animation to the button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.video-link {
+    animation: none;
+}
+
+@media (max-width: 600px) {
+    section.recipes article {
+        width: 100%;
+    }
+}
