@@ -1,6 +1,6 @@
-# Yash Recipe Website
+# Recipe Book Website
 
-The HTML files and resources for the Yash Recipe website are located in this repository. A variety of recipes are available on the web, with a focus on delectable and simple cuisine. An overview of the files and their purposes can be seen below.
+The HTML files and resources for the Recipe Book website are located in this repository. A variety of recipes are available on the web, with a focus on delectable and simple cuisine. An overview of the files and their purposes can be seen below.
 
 
 ## How to Navigate
@@ -38,4 +38,4 @@ Each page includes a footer with copyright information.
 
 ---
 
-Feel free to explore the recipes and enjoy cooking with Yash Recipe!
+Feel free to explore the recipes and enjoy cooking with Recipe Book!
